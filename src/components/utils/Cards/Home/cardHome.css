@@ -59,6 +59,10 @@
 .card-home .informations .frameworks {
     width: 100%;
     margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .card-home .informations .frameworks span {
