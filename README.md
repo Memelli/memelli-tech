@@ -6,6 +6,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+Colors: 
+#30343f
+#6a907f
+#fbfbfb
+
 ### `npm start`
 
 Runs the app in the development mode.\
