@@ -26,15 +26,15 @@ const Navbar = () => {
                     </Link>
 
 
-                    <div className="side-nav-link">
+                    <div className="disabled">
                         <AiFillCode /><span>Side Projects</span>
                     </div>
 
-                    <Link to="/repos">
-                        <div className="side-nav-link">
+                    
+                        <div className="disabled">
                             <MdEmail /><span>Contato</span>
                         </div>
-                    </Link>
+                    
                 </div>
             </nav>
         </>
