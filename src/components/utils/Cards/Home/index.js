@@ -9,6 +9,7 @@ const CardHome = () => {
                 <div className="name">
                     <span>Titulo</span>
                     <small>26/10/10 - 4 dias</small>
+                    <span>Dev Full Stack</span>
                 </div>
                 <div className="frameworks">
                     <span className="js">JS</span>    
