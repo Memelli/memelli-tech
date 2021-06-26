@@ -1,4 +1,5 @@
 import React from 'react'
+import CardHome from '../../components/utils/Cards/Home'
 import './home.css'
 
 const Home = () => {
@@ -22,7 +23,16 @@ const Home = () => {
                         <span data-tooltip="1 ano exp." data-tooltip-position="top">UI/UX</span>
                     </div>
                 </div>
+                
             </div>
+            <div className="jobs">
+                <CardHome />
+                <CardHome />
+                <CardHome />
+                <CardHome />
+            </div>
+
+            
         </div>
     )
 }
