@@ -125,6 +125,8 @@
     .home {
         height: auto;
         padding: 26px;
+        display: flex;
+        justify-content: center;
     }
 
     .home .content {

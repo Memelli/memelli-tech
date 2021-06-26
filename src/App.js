@@ -2,15 +2,19 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home';
 import { Switch, Route } from 'react-router-dom'
 import './App.css'
+import Footer from './components/Footer';
+import Repositories from './pages/Repositories';
 function App() {
   return (
     <>
       <Navbar />
       <div className="App">
-      <Switch>
-        <Route path="/" component={Home} exact />
-      </Switch>
+        <Switch>
+          <Route path="/" component={Home} exact />
+          <Route path="/repos" component={Repositories} exact />
+        </Switch>
       </div>
+      <Footer />
     </>
   );
 }

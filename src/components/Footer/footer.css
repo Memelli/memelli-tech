@@ -1,0 +1,31 @@
+footer {
+    bottom: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    background-color: rgba(48, 52, 63, 1);
+}
+
+footer .copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .copyright p {
+    font-family: 'Pacifico', cursive;
+    margin-left: 5px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .advice {
+    margin-bottom: 20px;
+}
