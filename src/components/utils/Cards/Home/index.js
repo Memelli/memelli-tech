@@ -6,7 +6,15 @@ const CardHome = () => {
         <div className="card-home">
             <img src="https://picsum.photos/100/100?grayscale" alt="aa" />
             <div className="informations">
-                    
+                <div className="name">
+                    <span>Titulo</span>
+                    <small>26/10/10 - 4 dias</small>
+                </div>
+                <div className="frameworks">
+                    <span className="js">JS</span>    
+                    <span className="react">React</span>    
+                    <span className="react">React</span>    
+                </div>
             </div>
         </div>
     )

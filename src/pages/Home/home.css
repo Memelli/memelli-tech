@@ -1,8 +1,6 @@
 .home {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
-    padding: 26px;
     width: 100%;
     justify-content: space-around;
 }
@@ -11,8 +9,8 @@
     border-radius: 6px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    height: 300px;
+    justify-content: center;
+    height: 100vh;
     align-items: center;
     width: 100%;
 }
@@ -50,7 +48,9 @@
 }
 
 .home .jobs {
+    margin-top: 50px;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
     height: auto;
@@ -149,6 +149,9 @@
 
     .home .jobs {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         flex-direction: column;
     }
 }
