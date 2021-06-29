@@ -1,11 +1,13 @@
 const Experiences = require('./experiences');
+const errorHandler = require('../common/errorHandler')
 
 Experiences.methods(['get', 'post', 'put', 'delete'])
-
 Experiences.updateOptions({
     new: true,
     runValidators: true
 })
+Experiences.after('post', errorHandler)
+Experiences.after('put', errorHandler)
 
 Experiences.route('get', (req, res, next) => {
     Experiences.find({}, (error, docs) => {
