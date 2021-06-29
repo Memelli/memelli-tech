@@ -30,11 +30,12 @@ const Navbar = () => {
                         <AiFillCode /><span>Side Projects</span>
                     </div>
 
-                    
-                        <div className="disabled">
+                    <Link to="/contato">
+                        <div className="side-nav-link">
                             <MdEmail /><span>Contato</span>
                         </div>
-                    
+                    </Link>
+
                 </div>
             </nav>
         </>
