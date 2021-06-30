@@ -25,10 +25,11 @@ const Navbar = () => {
                         </div>
                     </Link>
 
-
+                    <Link aria-disabled>
                     <div className="disabled">
                         <AiFillCode /><span>Side Projects</span>
                     </div>
+                    </Link>
 
                     <Link to="/contato">
                         <div className="side-nav-link">

@@ -59,6 +59,7 @@ nav .side-nav .disabled {
     align-items: center;
     font-size: 20px;
     color: #ccc;
+    cursor: default;
 }
 
 nav a {
@@ -108,22 +109,25 @@ nav .side-social {
         width: 100%;
         margin-top: 15px;
     }
-
     nav .side-nav {
         flex-direction: row;
     }
-
     nav .side-nav .side-nav-link {
         padding: 6px;
         font-size: 24px;
     }
-
     nav .side-nav .side-nav-link:hover {
         padding: 6px;
         font-size: 24px;
     }
-
     nav .side-nav .side-nav-link span {
+        display: none;
+    }
+    nav .side-nav .disabled {
+        padding: 6px;
+        font-size: 24px;
+    }
+    nav .side-nav .disabled span {
         display: none;
     }
 }
