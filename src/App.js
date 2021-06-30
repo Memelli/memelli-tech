@@ -7,7 +7,7 @@ import Repositories from './pages/Repositories';
 import Contato from './pages/Contact';
 function App() {
   return (
-    <>
+    <div>
       <Navbar />
       <div className="App">
         <Switch>
@@ -17,7 +17,7 @@ function App() {
         </Switch>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

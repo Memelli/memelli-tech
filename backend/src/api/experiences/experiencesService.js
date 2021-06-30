@@ -28,14 +28,14 @@ Experiences.route('count', (req, res, next) => {
                 errors: [error]
             })
         } else {
-            res.json({value})
+            res.json({ value })
         }
     })
 })
 
 Experiences.route('summary', (req, res, next) => {
     BillingCycle.aggregate({
-        
+
     })
 })
 
