@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import './repositories.css'
 import moment from 'moment'
+import ReactLoading from 'react-loading'
 import { MdCreateNewFolder } from 'react-icons/md'
 import { BiGitPullRequest } from 'react-icons/bi'
 import { SiJavascript } from 'react-icons/si'
@@ -10,6 +11,7 @@ import { FaJava } from 'react-icons/fa'
 
 const Repositories = () => {
     const [data, setData] = useState([])
+    const [loading, setLoading] = useState(true)
 
     useEffect(() => {
         const fetchData = async () => {
@@ -17,6 +19,7 @@ const Repositories = () => {
             const result = await axios.get(url)
                 .then((response) => {
                     setData(response.data)
+                    setLoading(false)
                 })
                 .catch(error => console.log(error))
             return result
@@ -26,7 +29,7 @@ const Repositories = () => {
 
     return (
         <div className="repositories">
-            {data.map(repo => (
+            {loading ? <div className="loading"><ReactLoading type={'spin'} color={'white'} height={'100px'} width={'100px'} /></div> : data.map(repo => (
                 <div className="card">
                     <div className="name">{repo.name}</div>
                     <div className="information">
