@@ -4,7 +4,7 @@ nav {
     width: 100%;
     height: auto;
     position: relative;
-    color: white;
+    color: #1c1d1f;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -15,9 +15,9 @@ nav {
 
 nav .side-logo {
     display: flex;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
     justify-content: center;
     text-align: center;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
     align-items: center;
     float: left;
     font-family: 'Pacifico', cursive;
@@ -35,6 +35,7 @@ nav .side-nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-size: 12px;
 }
 
 nav .side-nav .side-nav-link {
@@ -45,8 +46,7 @@ nav .side-nav .side-nav-link {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
-    text-shadow: 0px 0px 1px rgba(0, 0, 0, .5);
+    font-size: 16px;
 }
 
 nav .side-nav .disabled {
@@ -57,18 +57,18 @@ nav .side-nav .disabled {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 16px;
     color: #ccc;
     cursor: default;
 }
 
 nav a {
-    color: white;
+    color: #1c1d1f;
     text-decoration: none;
 }
 
 nav a:visited {
-    color: white;
+    color: #1c1d1f;
     text-decoration: none;
 }
 
@@ -76,15 +76,17 @@ nav .side-nav .side-nav-link span {
     display: flex;
     justify-content: center;
     margin-left: 4px;
+    font-size: 16px;
     border: 1px solid transparent;
     border-radius: 6px;
 }
 
 nav .side-nav .side-nav-link:hover {
-    background-color: rgba(48, 52, 63, .3);
+    background-color: #1c1d1f;
+    box-shadow: 0px 0px 1px 1px rgba(86, 36, 208, .2);
     color: #fbfbfb;
     border-radius: 6px;
-    font-size: 20px;
+    font-size: 16px;
     padding: 10px;
     width: auto;
     text-align: center;

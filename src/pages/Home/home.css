@@ -5,7 +5,7 @@
     justify-content: space-around;
 }
 
-.home .content {
+.content {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -13,38 +13,6 @@
     align-items: center;
     width: 100%;
     background-color: rgba(48, 52, 63, 1);
-}
-
-.home .about {
-    width: 40%;
-}
-
-.home .about .experiences {
-    display: flex;
-    margin-top: 20px;
-    justify-content: center;
-}
-
-.home .about .experiences span {
-    background-color: rgba(255, 255, 255, .3);
-    padding: 10px;
-    color: white;
-    width: auto;
-    border-radius: 4px;
-    margin-right: 5px;
-}
-
-.home .photo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.home .photo img {
-    border-radius: 50%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
-    width: 75%;
-    height: 75%;
 }
 
 .home .jobs {
@@ -69,7 +37,7 @@
     content: attr(data-tooltip);
     display: none;
     position: absolute;
-    background: rgba(106, 144, 127, 1);
+    background: rgba(86, 36, 208, .9);
     color: #fff;
     padding: 4px 8px;
     font-size: 14px;

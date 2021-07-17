@@ -1,9 +1,7 @@
 import React from 'react'
 import './nav.css'
-import { RiGitRepositoryFill } from 'react-icons/ri'
-import { AiFillHome, AiFillCode } from 'react-icons/ai'
-import { MdEmail } from 'react-icons/md'
 import { Link } from 'react-router-dom'
+import { navData } from '../utils/data/Data'
 
 const Navbar = () => {
     return (
@@ -13,30 +11,25 @@ const Navbar = () => {
                     <span> <b>{'memelli.'}</b> </span>
                 </div>
                 <div className="side-nav">
-                    <Link to="/">
-                        <div className="side-nav-link">
-                            <AiFillHome /><span>Home</span>
+                    {navData.map((item, index) => (
+                        <div key={index}>
+                            {item.disabled === false ?
+                                (
+                                    <Link to={item.to} key={index}>
+                                        <div className="side-nav-link">
+                                            {item.icon}<span>{item.page}</span>
+                                        </div>
+                                    </Link>
+                                ) :
+                                (
+                                    <Link aria-disabled to="" key={index}>
+                                        <div className="disabled">
+                                            {item.icon}<span>{item.page}</span>
+                                        </div>
+                                    </Link>
+                                )}
                         </div>
-                    </Link>
-
-                    <Link to="/repos">
-                        <div className="side-nav-link">
-                            <RiGitRepositoryFill /><span>Repositórios</span>
-                        </div>
-                    </Link>
-
-                    <Link aria-disabled>
-                    <div className="disabled">
-                        <AiFillCode /><span>Side Projects</span>
-                    </div>
-                    </Link>
-
-                    <Link to="/contato">
-                        <div className="side-nav-link">
-                            <MdEmail /><span>Contato</span>
-                        </div>
-                    </Link>
-
+                    ))}
                 </div>
             </nav>
         </>

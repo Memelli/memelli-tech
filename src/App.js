@@ -5,6 +5,8 @@ import './App.css'
 import Footer from './components/Footer';
 import Repositories from './pages/Repositories';
 import Contato from './pages/Contact';
+import About from './pages/About';
+
 function App() {
   return (
     <div>
@@ -12,6 +14,7 @@ function App() {
       <div className="App">
         <Switch>
           <Route path="/" component={Home} exact />
+          <Route path="/sobre" component={About} exact />
           <Route path="/repos" component={Repositories} exact />
           <Route path="/contato" component={Contato} exact />
         </Switch>

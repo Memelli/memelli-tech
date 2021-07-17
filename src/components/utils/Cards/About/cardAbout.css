@@ -1,0 +1,35 @@
+.about {
+    width: 40%;
+}
+
+.about .experiences {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.about .experiences span {
+    background-color: rgba(255, 255, 255, .3);
+    padding: 10px;
+    margin-top: 5px;
+    color: white;
+    width: auto;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+    width: 75%;
+    height: 75%;
+}
