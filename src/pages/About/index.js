@@ -6,7 +6,6 @@ import { FaReact } from 'react-icons/fa'
 
 const About = () => {
     const data = aboutPageData
-    console.log(data)
     return (
         <>
             <div className="about-page">

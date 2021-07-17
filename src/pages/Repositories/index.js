@@ -45,7 +45,6 @@ const Repositories = () => {
       }
     `
     const { loading, error, data } = useQuery(REPOS);
-
     if (loading) {
         return (
             <div className="loading"><ReactLoading type={'spin'} color={'black'} height={'100px'} width={'100px'} /></div>
@@ -59,7 +58,6 @@ const Repositories = () => {
     }
     if (data) {
         const repos = data.viewer.repositories.nodes;
-        console.log(repos)
         return (
             <>
                 <div className="repositories">

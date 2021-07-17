@@ -10,7 +10,7 @@ import ApolloClient from 'apollo-boost';
 const client = new ApolloClient({
   uri: 'https://api.github.com/graphql',
   headers: {
-      Authorization: `Bearer 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`,
+      Authorization: `Bearer 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`,
   },
 });
 

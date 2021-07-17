@@ -5,6 +5,7 @@
     flex-direction: column;
     padding: 0 26px 0;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .about-page .titulo {
@@ -80,24 +81,42 @@
     text-align: center;
 }
 .about-page .certificates {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 .about-page .certificates .list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .about-page .certificates .list .certificate {
-    width: 100%;
     display: flex;
     flex-direction: row;
+}
+
+.about-page .certificates .list .certificate img:hover { 
+    -webkit-transition: transform 2s ease-in-out;
+    -moz-transition: transform 2s ease-in-out;
+    transition: transform 2s ease-in-out;
+}
+
+.about-page .certificates .list .certificate img:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);  
 }
 
 .about-page .certificates .list .certificate .float {
     height: 150px;
     display: flex;
-    margin-left: -40px;
+    margin-left: -45px;
+    z-index: 999;
     flex-direction: column;
     justify-content: space-evenly;
 }
