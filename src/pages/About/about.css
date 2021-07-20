@@ -67,10 +67,11 @@
     align-items: center;
     padding: 20px;
     width: 200px;
-    height: 200px;
+    height: auto;
     background-color: black;
     color: white;
     margin-right: 10px;
+    margin-top: 10px;
 }
 
 .about-page .experiences .languages .card .icon {
@@ -95,6 +96,7 @@
 .about-page .certificates .list .certificate {
     display: flex;
     flex-direction: row;
+    margin-top: 10px;
 }
 
 .about-page .certificates .list .certificate img:hover { 

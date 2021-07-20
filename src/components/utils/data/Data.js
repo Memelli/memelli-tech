@@ -1,6 +1,6 @@
 import { AiFillHome, AiFillCode } from 'react-icons/ai'
 import { RiGitRepositoryFill } from 'react-icons/ri'
-import { FaGithub, FaInstagram, FaLinkedin, FaTwitter, FaUserAlt } from 'react-icons/fa'
+import { FaGithub, FaInstagram, FaLinkedin, FaReact, FaTwitter, FaUserAlt } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 
 export const jobsData = [
@@ -111,7 +111,8 @@ export const aboutPageData = {
             endAt: "Jan/20",
             seniority: "Jr.",
             experienceTime: "2 anos",
-            prominence: ["Udemy", "doc"]
+            prominence: "Udemy",
+            icon: <FaReact className="icon" />
         },
         {
             name: "Node",
@@ -119,7 +120,8 @@ export const aboutPageData = {
             endAt: "Dez/19",
             seniority: "Jr.",
             experienceTime: "2 anos",
-            prominence: ["Udemy", "doc"]
+            prominence: "Udemy",
+            icon: <FaLinkedin className="icon" />
         },
     ],
     socialMedia: [
@@ -142,6 +144,50 @@ export const aboutPageData = {
             name: "Twitter",
             to: "/",
             icon: <FaTwitter />
+        },
+    ],
+    certificates: [
+        {
+            name: "Linkedin",
+            screen: "https://picsum.photos/300/150?grayscale",
+            language: <FaLinkedin />,
+            prominence: <FaTwitter />,
+        },
+        {
+            name: "React",
+            screen: "https://picsum.photos/300/150?grayscale",
+            language: <FaReact />,
+            prominence: <FaTwitter />,
+        },
+        {
+            name: "github",
+            screen: "https://picsum.photos/300/150?grayscale",
+            language: <FaGithub />,
+            prominence: <FaInstagram />,
+        },
+        {
+            name: "github",
+            screen: "https://picsum.photos/300/150?grayscale",
+            language: <FaGithub />,
+            prominence: <FaInstagram />,
+        },
+        {
+            name: "github",
+            screen: "https://picsum.photos/300/150?grayscale",
+            language: <FaGithub />,
+            prominence: <FaInstagram />,
+        },
+        {
+            name: "github",
+            screen: "https://picsum.photos/300/150?grayscale",
+            language: <FaGithub />,
+            prominence: <FaInstagram />,
+        },
+        {
+            name: "github",
+            screen: "https://picsum.photos/300/150?grayscale",
+            language: <FaGithub />,
+            prominence: <FaInstagram />,
         },
     ]
 }

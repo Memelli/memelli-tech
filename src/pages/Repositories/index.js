@@ -9,6 +9,7 @@ import { BiGitPullRequest } from 'react-icons/bi'
 import { SiJavascript, SiPowershell } from 'react-icons/si'
 import { DiCss3 } from 'react-icons/di'
 import { FaJava, FaHtml5 } from 'react-icons/fa'
+import { ErrorHandler } from '../../components/utils/Handlers/errorhandler';
 
 const Repositories = () => {
     const REPOS = gql`
@@ -53,7 +54,9 @@ const Repositories = () => {
 
     if (error) {
         return (
-            <p>Erro {error.message}</p>
+            <div style={{height: '90vh', color: 'black', display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', width: '100%'}}>
+                {ErrorHandler(error)}
+            </div>
         )
     }
     if (data) {

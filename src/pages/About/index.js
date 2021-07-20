@@ -3,11 +3,13 @@ import './about.css'
 import { aboutPageData } from '../../components/utils/data/Data'
 import { Link } from 'react-router-dom'
 import { FaReact } from 'react-icons/fa'
+import axios from 'axios'
 
 const About = () => {
     const data = aboutPageData
     return (
         <>
+            
             <div className="about-page">
                 <div className="user">
                     <div className="details">
@@ -26,72 +28,32 @@ const About = () => {
                 <div className="experiences">
                     <div className="titulo"><h1>Experiências</h1></div>
                     <div className="languages">
-                        <div className="card">
-                            <div><FaReact className="icon" /></div>
-                            <div className="info">
-                                <p>React</p>
-                                <p>Jan/19 - Abr/19</p>
-                                <p>Jr, 2 anos exp.</p>
+                        {data.experiences.map(item => (
+                            <div className="card">
+                                <div>{item.icon}</div>
+                                <div className="info">
+                                    <p>{item.name}</p>
+                                    <p>{item.initAt} - {item.endAt}</p>
+                                    <p>{item.seniority}, {item.experienceTime} exp.</p>
+                                    <p>{item.prominence}</p>
+                                </div>
                             </div>
-                        </div>
-                        <div className="card">
-                            <div><FaReact className="icon" /></div>
-                            <div className="info">
-                                <p>React</p>
-                                <p>Jan/19 - Abr/19</p>
-                                <p>Jr, 2 anos exp.</p>
-                            </div>
-                        </div>
-                        <div className="card">
-                            <div><FaReact className="icon" /></div>
-                            <div className="info">
-                                <p>React</p>
-                                <p>Jan/19 - Abr/19</p>
-                                <p>Jr, 2 anos exp.</p>
-                            </div>
-                        </div>
-                        <div className="card">
-                            <div><FaReact className="icon" /></div>
-                            <div className="info">
-                                <p>React</p>
-                                <p>Jan/19 - Abr/19</p>
-                                <p>Jr, 2 anos exp.</p>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
-
+                
                 <div className="certificates">
                     <div className="titulo"><h1>Certificados</h1></div>
                     <div className="list">
-                        <div className="certificate">
-                            <img src="https://picsum.photos/300/150?grayscale" alt=""/>
+                        {data.certificates.map((item, index) => (
+                        <div className="certificate" key={index}>
+                            <img src={item.screen} alt={item.name} />
                             <div className="float">
-                                <p><FaReact /></p>
-                                <p><FaReact /></p>
+                                <p>{item.language}</p>
+                                <p>{item.prominence}</p>
                             </div>
                         </div>
-                        <div className="certificate">
-                            <img src="https://picsum.photos/300/150?grayscale" alt=""/>
-                            <div className="float">
-                                <p><FaReact /></p>
-                                <p><FaReact /></p>
-                            </div>
-                        </div>
-                        <div className="certificate">
-                            <img src="https://picsum.photos/300/150?grayscale" alt=""/>
-                            <div className="float">
-                                <p><FaReact /></p>
-                                <p><FaReact /></p>
-                            </div>
-                        </div>
-                        <div className="certificate">
-                            <img src="https://picsum.photos/300/150?grayscale" alt=""/>
-                            <div className="float">
-                                <p><FaReact /></p>
-                                <p><FaReact /></p>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>

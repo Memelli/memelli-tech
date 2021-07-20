@@ -10,10 +10,9 @@ import ApolloClient from 'apollo-boost';
 const client = new ApolloClient({
   uri: 'https://api.github.com/graphql',
   headers: {
-      Authorization: `Bearer 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`,
+      Authorization: process.env.GITHUB_API_KEY,
   },
 });
-
 
 ReactDOM.render(
   <React.StrictMode>
